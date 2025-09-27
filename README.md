@@ -1,0 +1,2 @@
+# `bazel`-compiled hermetic `libzstd`
+

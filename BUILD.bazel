@@ -1,0 +1,32 @@
+load("@rules_foreign_cc//foreign_cc:defs.bzl", "make")
+
+package(default_visibility = ["//visibility:public"])
+
+make(
+    name = "libzstd",
+    lib_source = "@src//:all_srcs",
+    args = [
+        "V=1 PREFIX=$$INSTALLDIR$$ install",
+    ],
+    out_binaries = [ "zstd", "zstdgrep", "zstdless"],
+    out_shared_libs = [ "libzstd.so", "libzstd.so.1", "libzstd.so.1.5.7"],
+    out_static_libs = [ "libzstd.a" ],
+)
+
+filegroup(
+    name = "zstd_bin",
+    output_group = "zstd",
+    srcs = [":libzstd"],
+)
+
+filegroup(
+    name = "zstdgrep_bin",
+    output_group = "zstdgrep",
+    srcs = [":libzstd"],
+)
+
+filegroup(
+    name = "zstdless_bin",
+    output_group = "zstdless",
+    srcs = [":libzstd"],
+)
