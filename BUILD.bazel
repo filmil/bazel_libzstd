@@ -37,5 +37,6 @@ cc_test(
     srcs = [ "test.cc" ],
     deps = [
         ":libzstd",
-    ]
+    ],
+    size = "small",
 )

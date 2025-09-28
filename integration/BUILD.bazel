@@ -8,4 +8,5 @@ cc_test(
         "test.cc",
     ],
     deps = ["@libzstd//:libzstd"],
+    size = "small",
 )
