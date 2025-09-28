@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/filmil/bazel_elfutils",
+  "homepage": "https://github.com/filmil/bazel_libzstd",
   "maintainers": [
     {
       "name": "Filip Filmar",
@@ -9,7 +9,7 @@
     }
   ],
   "repository": [
-    "github:filmil/bazel_elfutils"
+    "github:filmil/bazel_libzstd"
   ],
   "versions": [
   ],
