@@ -1,5 +1,5 @@
 module(
-    name = "libzstd",
+    name = "libzstd_foreign",
     version = "0.0.0",
 )
 
